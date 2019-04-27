@@ -1,0 +1,38 @@
+1800             ! map x-size in points
+900.e6          ! xmax
+300.e6          ! ymax
+
+'monopolar'    ! scenario
+0.e0          ! I. conds (param. #1)
+0.             ! I. conds (param. #2)
+0.             ! I. conds (param. #3)
+10000          ! number of magnetic features
+30.e0           ! lat0 (degrees)
+20.e6          ! active region radius (change into scenario parameters)
+ 0.0e6          ! cancel threshold
+103.e6           ! sigma (meters)
+3740000.00000000            ! alpha
+1.e0           ! beta
+1.e0            ! ifac
+
+3.e6 2592001.e0    ! tmax (s)
+1.e5             ! twrite (s) (0 for dt_write = dt_rw)
+
+250.e0          ! diffusion coefficient (km**2/s)
+500.e3          ! rw step size (m)
+.false.          ! Optimize timestep?
+500.e3          ! Reference stepsize
+.false.          ! Simultaneous random walk change
+.true.          ! Allow cancellation only at end of RW step (only if sim_rwc == .true.)
+
+.false.          ! include shear?
+.false.          ! include mflow?
+.false.          ! include inflows?
+.true.          ! include random walk?
+
+'./out'             ! Output directory
+.true.                       ! Verbose output
+
+    1                       ! Random number generator seed (integer)
+
+
